@@ -1,0 +1,14 @@
+<!-- search-box------------------->
+<form class="form-wrapper cf">
+  <input type="text" placeholder="Search here..." required>
+  <button type="submit">Search</button>
+</form>
+<!-- search-box------------------->
+
+<!-- card-list------------------->
+<div class="columns" *ngFor="let a of albums">
+  <div class="column">
+      <app-card [album]='a'></app-card>
+  </div>
+</div>
+<!-- card-list------------------->

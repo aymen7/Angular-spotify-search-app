@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SpotifyService} from '../spotify.service';
-import { Album } from '../album.model';
+import {SpotifyService} from '../../../app/spotify.service';
+import { Album } from '../../../app/album.model';
 @Component({
   selector: 'app-search-box',
   templateUrl: './search-box.component.html',
@@ -12,7 +12,7 @@ export class SearchBoxComponent implements OnInit {
     this.fetchingSearchData();
    }
   fetchingSearchData() {
-    this._spotify.search('eminem', 'album', 2).subscribe(
+    this._spotify.search('eminem', 'album', 3).subscribe(
       data => {
         this.albums = data.albums.items;
         console.log(data.albums.items);
