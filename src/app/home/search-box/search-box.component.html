@@ -1,8 +1,11 @@
 <!-- search-box------------------->
-<form class="form-wrapper cf">
-  <input type="text" placeholder="Search here..." required>
-  <button type="submit">Search</button>
+<form class="form-wrapper cf" [formGroup]="searchForm" (ngSubmit)="submitSearchForm(searchForm.value)">
+  <input type="text" placeholder="Search for albums here..." [formControl]="searchForm.controls['searchInput']">
+  <button type="submit" [disabled]="!searchForm.valid || (!searchForm.valid && searchForm.touched)
+  || (!searchForm.valid && searchForm.dirty)">Search</button>
 </form>
+<p class='error'*ngIf="searchForm.controls['searchInput'].touched &&
+  searchForm.controls['searchInput'].hasError('required')">this field is required</p>
 <!-- search-box------------------->
 
 <!-- card-list------------------->

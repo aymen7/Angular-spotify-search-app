@@ -5,8 +5,14 @@
     float: left;
     perspective: 500px;
     margin-right: 2%; 
+    margin-top: 2%;
   }
-  
+  .shadow {
+    -webkit-box-shadow: 3px 0px 4px -1px #1ED760 #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 0px 4px -1px #1ED760 #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 0px 4px -1px #1ED760 #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+    
   .content {
     position: relative;
     width: 100%;

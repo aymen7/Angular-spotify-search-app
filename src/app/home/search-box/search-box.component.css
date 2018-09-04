@@ -99,10 +99,15 @@
     border: 0;
     padding: 0;
 }
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
 /*-----------card-list--------------------*/
 .columns{
     margin: 0 auto;
     margin-top: 100px;
     margin-left: 13%;
 }
-/*-----------card-list--------------------*/
+/*-----------end card-list--------------------*/
