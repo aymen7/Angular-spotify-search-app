@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 // modules
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
 // componenets
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
@@ -26,7 +27,8 @@ import {SpotifyService} from './spotify.service';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [SpotifyService],
   bootstrap: [AppComponent]

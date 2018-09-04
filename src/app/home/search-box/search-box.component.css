@@ -1,3 +1,4 @@
+/*-----------end of searchForm--------------------*/
 .form-wrapper {
     width: 450px;
     padding: 15px;
@@ -104,10 +105,36 @@
     font-size: 12px;
     margin-top: 5px;
 }
+/*-----------end of searchForm--------------------*/
+
 /*-----------card-list--------------------*/
 .columns{
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 140px;
     margin-left: 13%;
 }
 /*-----------end card-list--------------------*/
+/*-----------pagination-controls--------------------*/
+
+.ngx-pagination {
+    position: absolute;
+    top: 420px;
+    left: 25%;
+    width: 620px;
+}
+.ngx-pagination /deep/ li {
+    margin-left: 5px;
+}
+.ngx-pagination /deep/ li a{
+    color: white !important;
+}
+.ngx-pagination /deep/ li a:hover{
+    background: rgba(0,0,0,0) !important;
+}
+.ngx-pagination  /deep/ .current{
+    background: #1DB954 !important;
+}
+.ngx-pagination  /deep/ .pagination-previous,
+.ngx-pagination  /deep/ .pagination-next{
+}
+/*-----------end pagination-controls--------------------*/
