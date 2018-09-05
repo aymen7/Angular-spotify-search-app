@@ -2,13 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import {SpotifyService} from '../../../app/spotify.service';
 import { Album } from '../../../app/album.model';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { trigger, transition, useAnimation } from '@angular/animations';
+import { fadeIn } from 'ng-animate';
+
 @Component({
   selector: 'app-search-box',
   templateUrl: './search-box.component.html',
-  styleUrls: ['./search-box.component.css']
+  styleUrls: ['./search-box.component.css'],
+  animations: [
+    trigger('fadeIn', [transition('* => *', useAnimation(fadeIn))])
+  ]
 })
 export class SearchBoxComponent implements OnInit {
+  // albums collection
   albums: Album[];
+  // animation
+  fadeIn: any;
   // my searchForm
   searchForm: FormGroup;
   // pagination

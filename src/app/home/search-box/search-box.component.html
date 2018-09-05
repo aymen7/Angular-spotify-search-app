@@ -10,7 +10,7 @@
 
 <!-- card-list------------------->
 <div class="columns" *ngFor="let a of albums | paginate: { itemsPerPage: 9, currentPage: p }">
-  <div class="column">
+  <div class="column" [@fadeIn]="fadeIn">
       <app-card [album]='a'></app-card>
   </div>
 </div>
