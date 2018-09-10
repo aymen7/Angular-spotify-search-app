@@ -15,13 +15,15 @@ import { CardComponent } from './home/search-box/card/card.component';
 import { HomeComponent } from './home/home.component';
 // services
 import {SpotifyService} from './spotify.service';
+import { Card2Component } from './home/search-box/card2/card2.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchBoxComponent,
     CardComponent,
-    HomeComponent
+    HomeComponent,
+    Card2Component
   ],
   imports: [
     BrowserModule,

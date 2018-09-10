@@ -1,0 +1,21 @@
+<div class="blog-card spring-fever"
+[ngStyle]="{'background-image': 'url(' + album_back.images[1].url + ')'}">
+  <div class="content">
+      <h3>{{album_back.name}}</h3>
+      <div class="info">
+          <ul class="artists-list">
+              <span>Artists: </span>
+              <li *ngFor="let artist of album_back.artists; let i=index"><a href="{{artist.external_urls.spotify}}" target="_blanck">{{artist.name}}</a><span *ngIf="i!=album_back.artists.length - 1">.</span></li>
+          </ul>  
+          <!--div>{{album_back.release_date.split('-')[0]}} . {{album_back.total_tracks}} songs</div-->
+      </div>
+      <div class="main">
+        <div class="sub-main">
+            <a class="button-two" href="#"><span>See More</span></a>
+          </div>
+      </div>
+  </div><!-- /.title-content -->
+
+  <!-- overlays -->
+  <div class="color-overlay"></div>
+</div><!-- /.blog-card -->

@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+// variables
+$card-width:  300px;
+$card-height: 300px;
+$h-color:     #9CC9E3;
+$yellow:      #D0BB57;
+$txt-color:   #DCE3E7;
+$info_color: rgba(255,255,255,.8);
+$spotify_green: #1DB954;
+
+.blog-card{
+  width: $card-width;
+  height: $card-height;
+  position: absolute;
+  top: 83%;
+  left: 58%;
+  margin: -250px 0 0 -175px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+  text-align: center;
+   
+  .color-overlay{
+    /* Rectangle 11: */
+    background: rgba(0,0,0,0.85);
+    width: $card-width;
+    height: $card-height;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  .gradient-overlay{
+    /* bg-gradient: */
+    width: $card-width;
+    height: $card-height;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 15;
+  }
+  
+  &:hover{
+    
+    .card-info{
+      opacity: 1;
+      bottom: 120px;
+    }
+
+  }
+}
+
+.content{
+  text-align: center;
+  margin: 0px 0 0 0;
+  position: absolute;
+  width: 100%;
+  top: -20%;
+  left: 0;
+  z-index: 20;
+  .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $info_color;
+    ul{
+      position: relative;
+      top: 40px;
+      float: none;
+      margin: 0 auto;
+      font-size: 14px;
+      li {
+        display: inline;
+        font-size: 14px;
+        margin-right: 2px;
+        a{
+          color: $info_color;
+          text-decoration: none;
+        }
+      }
+    }
+
+    div{
+      position: absolute;
+      top: 130px;
+      left: 90px;
+      font-size: 11px;
+      width: 100%;
+    }
+  }
+  h3{
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  /*------------btn style -----------*/
+a{
+  color:#fff;
+  text-align: center;
+  padding: 2px;
+}
+.main{
+  width: 100%;
+  position: absolute;
+  top: 58px;
+  left: 85px;
+  .sub-main{
+    width: 30%;
+    margin:22px;
+  }
+  
+  .button-two{
+    text-align: center;
+    cursor: pointer;
+    font-size:12px;
+  }
+  /*Button Two*/
+  .button-two {
+    border-radius: 4px;
+    background-color: $spotify_green;
+    border: none;
+    padding: 10px;
+    transition: all 0.5s;
+  }
+  
+  
+  .button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-two span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-two:hover span {
+    padding-right: 25px;
+  }
+  
+  .button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
+/*------------end btn style -------*/
+}
+

@@ -113,6 +113,7 @@
     margin-top: 140px;
     margin-left: 13%;
 }
+
 /*-----------end card-list--------------------*/
 /*-----------pagination-controls--------------------*/
 
@@ -134,7 +135,5 @@
 .ngx-pagination  /deep/ .current{
     background: #1DB954 !important;
 }
-.ngx-pagination  /deep/ .pagination-previous,
-.ngx-pagination  /deep/ .pagination-next{
-}
+
 /*-----------end pagination-controls--------------------*/
