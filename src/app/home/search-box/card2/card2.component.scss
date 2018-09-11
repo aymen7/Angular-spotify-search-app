@@ -77,7 +77,7 @@ $spotify_green: #1DB954;
         margin-right: 2px;
         a{
           color: $info_color;
-          text-decoration: none;
+          text-decoration: underline;
         }
       }
     }
@@ -112,12 +112,17 @@ a{
   .sub-main{
     width: 30%;
     margin:22px;
+    height: 0px !important;
   }
   
   .button-two{
     text-align: center;
     cursor: pointer;
     font-size:12px;
+    span{
+      height: 0px !important;
+      padding: -10px !important;
+    }
   }
   /*Button Two*/
   .button-two {

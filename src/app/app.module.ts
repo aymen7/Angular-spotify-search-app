@@ -7,15 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// componenets
+// components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './home/header/header.component';
+import { HeaderComponent } from './header/header.component';
+import { Card2Component } from './home/search-box/card2/card2.component';
 import { SearchBoxComponent } from './home/search-box/search-box.component';
 import { CardComponent } from './home/search-box/card/card.component';
 import { HomeComponent } from './home/home.component';
 // services
 import {SpotifyService} from './spotify.service';
-import { Card2Component } from './home/search-box/card2/card2.component';
 @NgModule({
   declarations: [
     AppComponent,

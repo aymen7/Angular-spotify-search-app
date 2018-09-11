@@ -35,7 +35,7 @@
     width: 100%;
     background: #191414;
     line-height: 300px;
-    color: #03446A;
+    color: #1DB954;
     text-align: center;
     font-size: 60px;
     border-radius: 5px;
@@ -43,7 +43,7 @@
   }
   
   .back {
-    background: #03446A;
+    background: #1DB954;
     color: white;
     transform: rotateY( 180deg );
   }
