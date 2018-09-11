@@ -16,6 +16,8 @@ import { CardComponent } from './home/search-box/card/card.component';
 import { HomeComponent } from './home/home.component';
 // services
 import {SpotifyService} from './spotify.service';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import {SpotifyService} from './spotify.service';
     SearchBoxComponent,
     CardComponent,
     HomeComponent,
-    Card2Component
+    Card2Component,
+    AlbumDetailComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

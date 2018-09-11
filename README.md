@@ -2,6 +2,7 @@
 this is *Spotify Search App* was created using *Angular 6* and it uses the the *Spotify API* to fetch real time data right from *Spotify*.<br>
 The *main* purpose of the app is to serve as a tutorial to some beginner/intermediate *Angular* concepts, the likes of:
 * HttpClientModule and use it to communicate with the *Spotify API*.
+* Angular Routing (redirection, wildCard, passing data ....).
 * *Services* and *dependency injection*. 
 * _Reactive forms_ (Form Builder, form controls validation ....).
 * How to use the *BrowserAnimationsModule* along with the [ng-animate](https://github.com/jiayihu/ng-animate) module to create beautiful flexible animations. 

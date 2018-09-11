@@ -9,7 +9,7 @@ export class SpotifyService {
   static  BASE_URL = 'https://api.spotify.com/v1';
   private auth: string;
   constructor(private _http: HttpClient ) {
-    this.auth = 'Bearer BQAKFZtSvXDbXECrD9ZUH197TXIL09lyF4r-SCPaLvXPu_XCicdIpgVR8C-kGozJB0uXhwZkRxBZWqVcDWu23B91iMirgbYLDhuStcDuqWmCul2amtFK7lDe78Hi5Jb8HmizR3tUpRuevanaP-0KpkCQWdqujHgSaIUgQiUjhSO2';
+    this.auth = 'Bearer BQDrGAQk6USLuFsO2rGNdznF9aYjxZzuE5-cYAhAxKzImAjD1PffGBXplhdz4XzOq5uNCAscfaEkzRP9_t_YaY5KmfvayfkNeSFoPOF96g03gUW2Tr0mdo5vruM9JMWfFUl8IVonLYhXDA4wsPmWW5oys8zAP1sENuVCEQDK9rsZ';
    }
    query(url: string, params: string[]): Observable<any[]> {
          /*
