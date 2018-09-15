@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {SpotifyService} from '../../../app/spotify.service';
-import { Album } from '../../../app/album.model';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { fadeIn } from 'ng-animate';
@@ -15,7 +14,7 @@ import { fadeIn } from 'ng-animate';
 })
 export class SearchBoxComponent implements OnInit {
   // albums collection
-  albums: Album[];
+  albums: Object[];
   // animation
   fadeIn: any;
   // my searchForm

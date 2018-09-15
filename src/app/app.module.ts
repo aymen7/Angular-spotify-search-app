@@ -9,15 +9,15 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { Card2Component } from './home/search-box/card2/card2.component';
-import { SearchBoxComponent } from './home/search-box/search-box.component';
-import { CardComponent } from './home/search-box/card/card.component';
-import { HomeComponent } from './home/home.component';
+        import { HeaderComponent } from './header/header.component';
+        import { HomeComponent } from './home/home.component';
+            import { SearchBoxComponent } from './home/search-box/search-box.component';
+                import { CardComponent } from './home/search-box/card/card.component';
+                    import { Card2Component } from './home/search-box/card2/card2.component';
+        import { AlbumDetailComponent } from './album-detail/album-detail.component';
+        import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 // services
 import {SpotifyService} from './spotify.service';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
