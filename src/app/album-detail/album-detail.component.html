@@ -1,4 +1,19 @@
-<p>
-  album-detail works! and the album id is: {{album_id_route}} <br>
-  album name: {{album.name}}
-</p>
+<iframe [src]="iframeUrl | safe" width="800" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<div class="movie_card" id="album">
+  <div class="info_section">
+    <div class="movie_header">
+      <img class="locandina" src="{{album.images[1].url}}"/>
+      <h1>{{album.name}}</h1>
+      <h4>{{album.release_date.split('-')[0]}}, {{album.label}}</h4>
+      <span class="tracks">{{album.total_tracks
+      }} tracks</span>
+      <p class="type" >
+        <li *ngFor="let artist of album.artists; let i=index"><a href="{{artist.external_urls.spotify}}" target="_blanck">{{artist.name}}</a><span *ngIf="i!=album.artists.length - 1">, </span></li>
+      </p>
+  </div>
+  </div>
+  <div class="blur_back" [ngStyle]="{'background-image': 'url(' + album.images[0].url + ')'}"></div>
+</div>
+<!-- use the pipe for iframe-->
+
+

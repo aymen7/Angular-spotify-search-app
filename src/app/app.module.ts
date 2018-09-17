@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
             import { SearchBoxComponent } from './home/search-box/search-box.component';
                 import { CardComponent } from './home/search-box/card/card.component';
                     import { Card2Component } from './home/search-box/card2/card2.component';
-        import { AlbumDetailComponent } from './album-detail/album-detail.component';
+        import { AlbumDetailComponent, SafePipe} from './album-detail/album-detail.component';
         import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 // services
 import {SpotifyService} from './spotify.service';
@@ -27,7 +27,8 @@ import {SpotifyService} from './spotify.service';
     HomeComponent,
     Card2Component,
     AlbumDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
