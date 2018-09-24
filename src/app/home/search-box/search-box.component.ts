@@ -7,12 +7,13 @@ import { fadeIn } from 'ng-animate';
 @Component({
   selector: 'app-search-box',
   templateUrl: './search-box.component.html',
-  styleUrls: ['./search-box.component.css'],
+  styleUrls: ['./search-box.component.scss'],
   animations: [
     trigger('fadeIn', [transition('* => *', useAnimation(fadeIn))])
   ]
 })
 export class SearchBoxComponent implements OnInit {
+  loading: boolean;
   // albums collection
   albums: Object[];
   // animation
@@ -29,13 +30,19 @@ export class SearchBoxComponent implements OnInit {
     // init p to start from 1
     // if you want to start from 2 make this.p = 2
     this.p = 1;
+    this.loading = true;
    }
   // use fetchingSearchData() to call the SpotifyService search()
   fetchingSearchData(search_query: string) {
     this._spotify.search(search_query, 'album').subscribe(
-      data => {
+      (data) => {
         this.albums = data.albums.items;
         console.log(data.albums.items);
+      },
+      (error) => {console.log(error); },
+      () => {
+        // on complete
+        this.loading = false;
       }
     );
 

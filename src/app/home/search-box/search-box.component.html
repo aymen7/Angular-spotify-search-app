@@ -7,12 +7,22 @@
 <p class='error'*ngIf="searchForm.controls['searchInput'].touched &&
   searchForm.controls['searchInput'].hasError('required')">this field is required</p>
 <!-- search-box------------------->
-
-<!-- card-list------------------->
-<div class="columns" *ngFor="let a of albums | paginate: { itemsPerPage: 9, currentPage: p }">
-  <div class="column" [@fadeIn]="fadeIn">
-      <app-card [album]='a'></app-card>
-  </div>
+<!-- loading -->
+<div class="loading-bro" *ngIf="loading">
+  <h1>Loading</h1>
+  <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
+    <circle id="loading-inner" cx="75" cy="75" r="60"/>
+ </svg>
 </div>
-<pagination-controls (pageChange)="p = $event" class='ngx-pagination '></pagination-controls>
+<!-- end loading-->
+<!-- card-list------------------->
+<div *ngIf="!loading" id='albums-list-wrapper'>
+  <div  class="columns" *ngFor="let a of albums | paginate: { itemsPerPage: 9, currentPage: p }">
+    <div class="column" [@fadeIn]="fadeIn">
+        <app-card [album]='a'></app-card>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class='ngx-pagination '></pagination-controls>
+</div>
+
 <!-- card-list------------------->

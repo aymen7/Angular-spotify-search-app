@@ -9,7 +9,7 @@ export class SpotifyService {
   static  BASE_URL = 'https://api.spotify.com/v1';
   private auth: string;
   constructor(private _http: HttpClient ) {
-    this.auth = 'Bearer BQDODAt_f45zGZub8kNA7jfXXiSOaSthvs1lnczMMPa8gO-xTjDFsUAIooJ10vfp6LplDrR9HxkC--pVsOqNKIeEdfMX2Az5GNwMiBgw9fvzhiboK8ykUPewn7b8-a2B_OnFDUTjiEZeYzXPKYjidwtxvjGq7cIpqg4bG9U88S3w_w';
+    this.auth = 'Bearer BQC-W41s_AbYN8vDh8TbeZaPo4T7QGPq_xXm023MvcW93MAZDS1-lpA1HmZUUostMGVErH77VYTpD8CM-SylfOjii4goSKDaZKRiulDgkhYy0GuIomvC1owc3NUrISiUdKV-wnNpjvpw6TMnQfv8X-s6RdbnETW0J9y6soSlEdRdkA';
    }
   /*
     * this method will take the url (ex: '/search',....) and
